@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="icon" href="cloudy.ico">
+  <link rel="stylesheet" href="styles.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class='container'>
+      <div class='icon-container'>
+        <canvas id='icon' width="100" height="100"></canvas>
+      </div>
+    <div class='content'>
+      <div class='information'>
+        <div class='status' id='status'>Enter A Location</div>
+        <div class='location' id='location'>To Find The Weather</div>
+      </div>
+      <div class='detail-container'>
+        <div class='detail'>
+          <div class='title'>Temperature</div>
+          <div class='value' id='temperature'>TBD</div>
+        </div>
+        <div class='detail'>
+          <div class='title'>Feels Like</div>
+          <div class='value' id='apparent-temperature'>TBD</div>
+        </div>
+        <div class='detail'>
+          <div class='title'>Wind</div>
+          <div class='value' id='wind'>TBD</div>
+        </div>
+        <div class='detail'>
+          <div class='title'>Humidity</div>
+          <div class='value' id='humidity'>TBD</div>
+        </div>
+        <div class='detail'>
+          <div class='title'>Precipitation</div>
+          <div class='value' id='precipitation'>TBD</div>
+        </div>
+      </div>
+      <div class='city-search-container'>
+        <input type="text" class='city-search' id='city-search' placeholder='Enter Location'>
+      </div>
+    </div>
+  </div>
+  <a href='https://darksky.net/poweredby/' class='darksky' target="_blank">Powered By Dark Sky</a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js" integrity="sha512-ChQiOC9OBUvQ75KLv3+YRxCQLV1bSWnGfcSdaP1v3iu6XSkmge+eXCu3lcV+O+Uvdjb+LGMZd/KAvV4rkEfbzw==" crossorigin="anonymous"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB56WFluQhOCfzhH4Kdm4Zvc5LrQXRzTCU&libraries=places&callback=initMap">
+  </script>
+  <script src='main.js'></script>
+</body>
+</html>

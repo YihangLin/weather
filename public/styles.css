@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #80d8ff, #01579b);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  width: 60%;
+  max-width: 1200px;
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  border-radius: 1rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.icon-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.status {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.detail-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 0;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.value {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.city-search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.city-search {
+  font-size: 1.25rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.pac-item {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+.pac-icon {
+  display: none;
+}
+
+.pac-item-query {
+  font-size: 1.25rem;
+  padding-right: 1rem;
+}
+
+.darksky {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
